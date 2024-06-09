@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="cash-1.css" type="text/css">
+    <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+    <title>준비, 시장!</title>
+</head>
+
+<body>
+    <div class="quick_menu_container">
+        <div class="quick_mystore">
+            <div class="quick_img_mystore_container">
+                <img src="../images/store.png" class="quick_img_mystore" style="cursor: pointer;"
+                    onclick="location.replace('../mypage/my2.html');" />
+            </div>
+            <p class="quick_img_mystore_text" style="cursor: pointer;">나의 가게 현황</p>
+        </div>
+        <div class="quick_line"></div>
+        <div class="quick_editstore">
+            <div class="quick_img_editstore_container">
+                <img src="../images/draw.png" class="quick_img_editstore" style="cursor: pointer;"
+                    onclick="location.replace('../myadedit/cash-1.html');" />
+            </div>
+            <p class="quick_img_editstore_text" style="cursor: pointer;">가게 정보 수정</p>
+        </div>
+        <div class="quick_line"></div>
+        <div class="quick_count">
+            <div class="quick_img_count_container">
+                <img src="../images/eye.png" class="quick_img_count" style="cursor: pointer;"
+                    onclick="location.replace('../mypage/my1.html');" />
+            </div>
+            <p class="quick_img_count_text" style="cursor: pointer;">노출 수</p>
+        </div>
+        <div class="quick_line"></div>
+        <div class="quick_help">
+            <div class="quick_img_help_container">
+                <img src="../images/help-web-button (1).png" class="quick_img_help" style="cursor: pointer;"
+                    onclick="location.replace('../usesteps/use-step1.html');" />
+            </div>
+            <p class="quick_img_help_text" style="cursor: pointer;">사용 방법</p>
+        </div>
+    </div>
+
+    <div class="wall"></div>
+
+    <div class="window">
+        <div class="backbox">
+            <div class="back" onclick="location.href='../main/mainpage.html';">&lt;</div>
+            <div class="hongbosujung">
+                홍보/수정하기
+            </div>
+        </div>
+
+        <h2 class="input">정보입력</h2>
+        <hr class="sun">
+
+        <div>
+            <div class="mission1"><span class="star">*</span>점포명</div>
+            <div class="textbox1">
+                <input class="insert-1" type="text" id="jumpo" name="jumpo" value="점포명을 입력하세요" onfocus="this.value=''"
+                    onblur="this.value" onclick="document.getElementById('jumpo').style.opacity = '100%'">
+            </div>
+            <div class="mission2"><span class="star">*</span>점포 위치</div>
+            <div class="textbox1" style="border-radius: 10px;">
+                <input class="insert-2" type="text" id="location" name="location" value="위치를 설정해주세요"
+                    onfocus="this.value=''" onblur="this.value"
+                    onclick="document.getElementById('location').style.opacity = '100%'">
+            </div>
+
+            <input class="pic-load" type="file" id="input-file" style="display: none;">
+
+            <div>
+                <div class="mission3">사진 등록</div>
+                <div style="overflow: hidden;">
+                    <!-- 첫 번째 take-photo 요소 -->
+                    <div class="take-photo1">
+
+                        <img src="../images/dslr-camera.png" alt=""
+                            style="margin-top: 39px;margin-left: 67px; width:49px; height: 49px; cursor: pointer;">
+                        <p
+                            style="margin-top: -1px;text-align: center;color: #00A863;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;opacity: 0.4;">
+                            카메라로 촬영하기</p>
+                    </div>
+                    <!-- 두 번째 take-photo 요소 -->
+                    <div class="take-photo2">
+                        <label for="inputfile">
+                            <img src="#" alt="" id="inputimg2" onerror="this.src='../images/photo.png';"
+                                style="margin-top: 39px; margin-left: 67px;width:49px; height: 49px; cursor: pointer;">
+                        </label>
+                        <input type="file" id="inputfile" name="inputfile" style="display: none;"
+                            accept="image/png, image/jpeg" />
+                        <p
+                            style="margin-top: -1px; text-align: center; color: #00A863; font-family: Pretendard; font-size: 15px; font-style: normal; font-weight: 400; line-height: normal; letter-spacing: -0.75px; opacity: 0.4;">
+                            사진 불러오기</p>
+                    </div>
+                </div>
+
+                <div class="mission4"><span class="star">*</span>가게 전화번호<span class="case"> ( "-" 없이 입력해 주세요.
+                        )</span></div>
+                <div class="textbox1">
+                    <input class="insert-3" type="text" id="phonenum" name="phonenum" value="전화번호를 입력해주세요"
+                        onfocus="this.value=''" onblur="this.value"
+                        onclick="document.getElementById('phonenum').style.opacity = '100%'">
+                </div>
+
+
+                <div class="mission5"><span class="star">*</span>가게 영얼일</div>
+                <div class="textbox1">
+                    <input type="text" id="title1" name="title1" class="bbttnn" value="월"
+                        style="margin-left: 16.103896103896103896103896103896%;" readonly>
+                    <input type="text" id="title2" name="title2" class="bbttnn" value="화"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title3" name="title3" class="bbttnn" value="수"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title4" name="title4" class="bbttnn" value="목"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title5" name="title5" class="bbttnn" value="금"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title6" name="title6" class="bbttnn" value="토"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title7" name="title7" class="bbttnn" value="일"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                </div>
+
+                <div class="mission6">가게 휴무일</div>
+                <div class="textbox1">
+                    <input type="text" id="title8" name="title8" class="bbttnn" value="월"
+                        style="margin-left: 16.103896103896103896103896103896%;" readonly>
+                    <input type="text" id="title9" name="title9" class="bbttnn" value="화"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title10" name="title10" class="bbttnn" value="수"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title11" name="title11" class="bbttnn" value="목"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title12" name="title12" class="bbttnn" value="금"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title13" name="title13" class="bbttnn" value="토"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                    <input type="text" id="title14" name="title14" class="bbttnn" value="일"
+                        style="margin-left: 7.532467532467532467532467532468%;" readonly>
+                </div>
+
+                <div class="mission11"><span class="star">*</span>가게 운영 시간</div>
+                <div class="timeset-1">
+                    <input class="timeset-2" name="opentime" type="time">
+                </div>
+                <span class="wave">~</span>
+                <div class="timeset-3">
+                    <input class="timeset-4" name="closetime" type="time">
+                </div><br><br>
+
+                <div class="mission7"><span class="star">*</span>가게 이용 방법</div>
+                <input class="textbox2" type="button" value="매장 식사" name="eathere" readonly
+                    style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+                <input class="textbox3" type="button" value="포장" name="takeout" readonly
+                    style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+                <input class="textbox4" type="button" value="배달" name="delivery" readonly
+                    style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+                <input class="textbox5" type="button" value="기타" name="else1" readonly
+                    style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+
+                <div class="mission8"><span class="star">*</span>결제 방식</div>
+                <input class="textbox6" type="button" value="현금" name="cash" readonly
+                    style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+                <input class="textbox7" type="button" value="카드" name="card" readonly
+                    style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+                <input class="textbox8" type="button" value="상품권" name="poucher" readonly
+                    style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+                <input class="textbox9" type="button" value="지역화폐" name="localmoney" readonly
+                    style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+
+                <div class="mission9"><span class="star">*</span>홍보 메시지 작성</div>
+                <div class="textbox9-9">
+                    <textarea onfocus="this.value=''" onblur="this.value" name="notes">홍보 메시지를 작성하세요</textarea>
+                </div>
+
+                <div class="mission10"><span class="star">*</span>카테고리 설정</div>
+                <!--<label class="category" for="lang"></label>-->
+                <select class="category-1" name="category1" id="cate">
+                    <optgroup label="--분류  1--">
+                        <option value="미선택">없음</option>
+                        <option value="축산">축산</option>
+                        <option value="수산">수산</option>
+                        <option value="청과">청과</option>
+                        <option value="음식">음식</option>
+                    </optgroup>
+                    <optgroup label="--분류 2--">
+                        <option value="의류">의류</option>
+                        <option value="신발">신발</option>
+                        <option value="악세서리">악세서리</option>
+                    </optgroup>
+                    <optgroup label="--분류 3--">
+                        <option value="생활용품">생활용품</option>
+                        <option value="침구">침구</option>
+                    </optgroup>
+                    <optgroup label="--분류 4--">
+                        <option value="공방">공방</option>
+                        <option value="도서">도서</option>
+                        <option value="문구">문구</option>
+                    </optgroup>
+                    <optgroup label="--분류 5--">
+                        <option value="기타">기타</option>
+                    </optgroup>
+                </select>
+                <select class="category-1" name="category2" id="cate" style="margin-left: 18px;">
+                    <optgroup label="--분류  1--">
+                        <option value="미선택">없음</option>
+                        <option value="축산">축산</option>
+                        <option value="수산">수산</option>
+                        <option value="청과">청과</option>
+                        <option value="음식">음식</option>
+                    </optgroup>
+                    <optgroup label="--분류 2--">
+                        <option value="의류">의류</option>
+                        <option value="신발">신발</option>
+                        <option value="악세서리">악세서리</option>
+                    </optgroup>
+                    <optgroup label="--분류 3--">
+                        <option value="생활용품">생활용품</option>
+                        <option value="침구">침구</option>
+                    </optgroup>
+                    <optgroup label="--분류 4--">
+                        <option value="공방">공방</option>
+                        <option value="도서">도서</option>
+                        <option value="문구">문구</option>
+                    </optgroup>
+                    <optgroup label="--분류 5--">
+                        <option value="기타">기타</option>
+                    </optgroup>
+                </select>
+                <select class="category-1" name="category3" id="cate" style="margin-left: 18px;">
+                    <optgroup label="--분류  1--">
+                        <option value="미선택">없음</option>
+                        <option value="축산">축산</option>
+                        <option value="수산">수산</option>
+                        <option value="청과">청과</option>
+                        <option value="음식">음식</option>
+                    </optgroup>
+                    <optgroup label="--분류 2--">
+                        <option value="의류">의류</option>
+                        <option value="신발">신발</option>
+                        <option value="악세서리">악세서리</option>
+                    </optgroup>
+                    <optgroup label="--분류 3--">
+                        <option value="생활용품">생활용품</option>
+                        <option value="침구">침구</option>
+                    </optgroup>
+                    <optgroup label="--분류 4--">
+                        <option value="공방">공방</option>
+                        <option value="도서">도서</option>
+                        <option value="문구">문구</option>
+                    </optgroup>
+                    <optgroup label="--분류 5--">
+                        <option value="기타">기타</option>
+                    </optgroup>
+                </select>
+                <select class="category-1" name="category4" id="cate" style="margin-left: 18px;">
+                    <optgroup label="--분류  1--">
+                        <option value="미선택">없음</option>
+                        <option value="축산">축산</option>
+                        <option value="수산">수산</option>
+                        <option value="청과">청과</option>
+                        <option value="음식">음식</option>
+                    </optgroup>
+                    <optgroup label="--분류 2--">
+                        <option value="의류">의류</option>
+                        <option value="신발">신발</option>
+                        <option value="악세서리">악세서리</option>
+                    </optgroup>
+                    <optgroup label="--분류 3--">
+                        <option value="생활용품">생활용품</option>
+                        <option value="침구">침구</option>
+                    </optgroup>
+                    <optgroup label="--분류 4--">
+                        <option value="공방">공방</option>
+                        <option value="도서">도서</option>
+                        <option value="문구">문구</option>
+                    </optgroup>
+                    <optgroup label="--분류 5--">
+                        <option value="기타">기타</option>
+                    </optgroup>
+                </select>
+
+                <div class="mission10"><span class="star">*</span>노출 빈도수 설정<span class="case"> (광고 노출 정도에 따라 수수료 차등
+                        부과)</span></div>
+
+                <input class="first" type="radio" id="option1" name="option" value="1" style="margin-top: 23px;">
+                <input class="sec" type="radio" id="option2" name="option" value="2">
+                <input class="sec" type="radio" id="option3" name="option" value="3">
+                <input class="sec" type="radio" id="option4" name="option" value="4">
+                <input class="sec" type="radio" id="option5" name="option" value="5">
+                <hr class="sun2">
+                <label class="first-2" for="option1"
+                    style="color: #00A863;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;">1</label>
+                <label class="first-3" for="option2"
+                    style="color: #00A863;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;">2</label>
+                <label class="first-4" for="option3"
+                    style="color: #00A863;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;">3</label>
+                <label class="first-5" for="option4"
+                    style="color: #00A863;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;">4</label>
+                <label class="first-6" for="option5"
+                    style="color: #00A863;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;">5</label>
+                <label class="first-1" for="option1">매우 낮음</label>
+                <label class="sec-2" for="option2">낮음</label>
+                <label class="sec-3" for="option3">보통</label>
+                <label class="sec-4" for="option4">높음</label>
+                <label class="sec-5" for="option5">매우 높음</label>
+
+
+                <div class="mission10"><span class="star">*</span>예상 광고 수수료</div>
+                <input type="text" class="gageok" id="answer" name="cost" value="" readonly>
+
+
+                <script>
+
+                    // 광고 수수료 변경 코드
+                    function updateAnswer(value) {
+                        const answerDiv = document.getElementById('answer');
+                        answerDiv.setAttribute("value", value + "원");
+                    }
+
+                    // Attach event listeners to radio options
+                    const radioOptionss = document.querySelectorAll('input[type="radio"]');
+                    radioOptionss.forEach(option => {
+                        option.addEventListener('change', function () {
+                            const selectedValue = parseInt(this.value) * 10000;
+                            updateAnswer(selectedValue);
+                        });
+                    });
+                </script>
+
+                <!--맨 뒤에 함수 추가됨-->
+                <input class="send" type="button" value="디자인 미리보기" id="button123"
+                    style="color: #FFF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal; margin-top:20px">
+            </div>
+
+            <script type="module">
+
+                const textbox2Button = document.querySelector('.textbox2');
+                textbox2Button.addEventListener('click', () => {
+                    textbox2Button.classList.toggle('green-background');
+                });
+                const textbox3Button = document.querySelector('.textbox3');
+                textbox3Button.addEventListener('click', () => {
+                    textbox3Button.classList.toggle('green-background');
+                });
+                const textbox4Button = document.querySelector('.textbox4');
+                textbox4Button.addEventListener('click', () => {
+                    textbox4Button.classList.toggle('green-background');
+                });
+                const textbox5Button = document.querySelector('.textbox5');
+                textbox5Button.addEventListener('click', () => {
+                    textbox5Button.classList.toggle('green-background');
+                });
+
+                const textbox6Button = document.querySelector('.textbox6');
+                textbox6Button.addEventListener('click', () => {
+                    textbox6Button.classList.toggle('green-background');
+                });
+                const textbox7Button = document.querySelector('.textbox7');
+                textbox7Button.addEventListener('click', () => {
+                    textbox7Button.classList.toggle('green-background');
+                });
+                const textbox8Button = document.querySelector('.textbox8');
+                textbox8Button.addEventListener('click', () => {
+                    textbox8Button.classList.toggle('green-background');
+                });
+                const textbox9Button = document.querySelector('.textbox9');
+                textbox9Button.addEventListener('click', () => {
+                    textbox9Button.classList.toggle('green-background');
+                });
+
+
+                // 월화수목금토일 선택
+                const title1 = document.querySelector('#title1');
+                title1.addEventListener('click', () => {
+                    title1.classList.toggle('clicked');
+                });
+                const title2 = document.querySelector('#title2');
+                title2.addEventListener('click', () => {
+                    title2.classList.toggle('clicked');
+                });
+                const title3 = document.querySelector('#title3');
+                title3.addEventListener('click', () => {
+                    title3.classList.toggle('clicked');
+                });
+                const title4 = document.querySelector('#title4');
+                title4.addEventListener('click', () => {
+                    title4.classList.toggle('clicked');
+                });
+                const title5 = document.querySelector('#title5');
+                title5.addEventListener('click', () => {
+                    title5.classList.toggle('clicked');
+                });
+                const title6 = document.querySelector('#title6');
+                title6.addEventListener('click', () => {
+                    title6.classList.toggle('clicked');
+                });
+                const title7 = document.querySelector('#title7');
+                title7.addEventListener('click', () => {
+                    title7.classList.toggle('clicked');
+                });
+
+                // 밑에 월~일 선택
+                const title8 = document.querySelector('#title8');
+                title8.addEventListener('click', () => {
+                    title8.classList.toggle('clicked');
+                });
+                const title9 = document.querySelector('#title9');
+                title9.addEventListener('click', () => {
+                    title9.classList.toggle('clicked');
+                });
+                const title10 = document.querySelector('#title10');
+                title10.addEventListener('click', () => {
+                    title10.classList.toggle('clicked');
+                });
+                const title11 = document.querySelector('#title11');
+                title11.addEventListener('click', () => {
+                    title11.classList.toggle('clicked');
+                });
+                const title12 = document.querySelector('#title12');
+                title12.addEventListener('click', () => {
+                    title12.classList.toggle('clicked');
+                });
+                const title13 = document.querySelector('#title13');
+                title13.addEventListener('click', () => {
+                    title13.classList.toggle('clicked');
+                });
+                const title14 = document.querySelector('#title14');
+                title14.addEventListener('click', () => {
+                    title14.classList.toggle('clicked');
+                });
+
+
+                const button1 = document.getElementById('button123');
+
+
+                button1.addEventListener('click', function () {
+                    const insert1Value = document.querySelector(".insert-1").value;
+                    const insert2Value = document.querySelector(".insert-2").value;
+                    const insert3Value = document.querySelector(".insert-3").value;
+                    const timeset2Value = document.querySelector(".timeset-2").value;
+                    const timeset4Value = document.querySelector(".timeset-4").value;
+                    const textbox99Value = document.querySelector(".textbox9-9 textarea").value;
+
+                    const selectedTextbox2 = Array.from(document.querySelectorAll('.textbox2, .textbox3, .textbox4, .textbox5'))
+                        .filter(button => button.classList.contains('green-background'))
+                        .map(button => button.value);
+
+                    const selectedTextbox3 = Array.from(document.querySelectorAll('.textbox6, .textbox7, .textbox8, .textbox9'))
+                        .filter(button => button.classList.contains('green-background'))
+                        .map(button => button.value);
+
+                    const selectedBbttnn = Array.from(document.querySelectorAll('.bbttnn'))
+                        .filter(button => button.classList.contains('clicked'))
+                        .map(button => button.getAttribute('value'));
+
+                    const selectedRadio = Array.from(document.querySelectorAll('input[name="option"]'))
+                        .filter(option => option.checked)
+                        .map(option => option.value);
+
+                    const selectedCategory = Array.from(document.querySelectorAll('.category-1'))
+                        .filter(selectElement => selectElement.value !== '미선택')
+                        .map(selectElement => selectElement.value);
+
+                    if (insert1Value && insert2Value && insert3Value && timeset2Value && timeset4Value && textbox99Value &&
+                        selectedTextbox2.length > 0 && selectedTextbox3.length > 0 && selectedBbttnn.length > 0 &&
+                        selectedRadio.length > 0 && selectedCategory.length > 0) {
+
+                        const queryParams = new URLSearchParams({
+                            insert1: insert1Value,
+                            insert2: insert2Value,
+                            insert3: insert3Value,
+                            timeset2: timeset2Value,
+                            timeset4: timeset4Value,
+                            textbox99: textbox99Value,
+                            selectedTextbox2: selectedTextbox2.join(','),
+                            selectedTextbox3: selectedTextbox3.join(','),
+                            selectedBbttnn: selectedBbttnn.join(','),
+                            selectedRadio: selectedRadio.join(','),
+                            selectedCategory: selectedCategory.join(',')
+                        });
+
+                        const newURL = `cash-2.html?${queryParams.toString()}`;
+                        alert("점포명: " + insert1Value + "\n점포위치: " + insert2Value + "\n가게 전화번호: " + insert3Value + "\n가게 영업일: " + selectedTextbox2.join(',') + "\n운영 시작 시간: " + timeset2Value + "\n운영 마감 시간: " + timeset4Value + "\n가게 이용 방법: " + selectedTextbox2.join(',') + "\n결제 방식: " + selectedTextbox3.join(',') + "\n홍보 메시지: " + textbox99Value + "\n카테고리 설정: " + selectedCategory.join(',') + "\n노출 빈도수 설정: " + selectedRadio.join(','));
+                        window.location.href = newURL;
+
+                    } else {
+                        alert('필수 항목을 모두 입력해 주세요');
+                    }
+                });
+
+
+            </script>
+
+
+            <script type="module" src="./cash-1.js"></script>
+            <script>
+                document.getElementById("quick_img_mystore_container").addEventListener("click", () => {
+                    location.replace('../mypage/my2.html');
+                });
+                document.getElementById("quick_img_count_container").addEventListener("click", () => {
+                    location.replace('../mypage/my1.html');
+                });
+                document.getElementById("quick_img_help_container").addEventListener("click", () => {
+                    location.replace('../usesteps/use-step1.html');
+                });
+            </script>
+</body>
+
+</html>

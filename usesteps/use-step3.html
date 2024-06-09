@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="use-step3.css" type="text/css">
+  <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+  <title>준비, 시장!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+  <div class="window">
+    <div class="backbox">
+      <div class="back" onclick="location.href='use-step2.html'">&lt;</div>
+      <div class="bangbub">
+      사용 방법
+      </div>
+    </div>
+
+    <h2 class="step3">3단계</h2>
+    <h2 class="guide">‘홍보/수정하기’ 사용법을 익히기 위한 단계입니다.<br>원하는 단어를 눌러보세요.</h2>
+
+    <div>
+        <div class="mission1"><span class="star">*</span>누르기</div>
+        <div class="textbox1">
+          <div id="title1" class="bbttnn" style="margin-left: 51px;">월</div>
+          <div id="title2" class="bbttnn" style="margin-left: 29px;">화</div>
+          <div id="title3" class="bbttnn" style="margin-left: 29px;">수</div>
+          <div id="title4" class="bbttnn" style="margin-left: 29px;">목</div>
+          <div id="title5" class="bbttnn" style="margin-left: 29px;">금</div>
+          <div id="title6" class="bbttnn" style="margin-left: 29px;">토</div>
+          <div id="title7" class="bbttnn" style="margin-left: 29px;">일</div>
+        </div>
+        <div class="mission2"><span class="star">*</span>누르기</div>
+        <input class="textbox2" type="button" value="매장 식사" style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+        <input class="textbox3" type="button" value="포장" style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+        <input class="textbox4" type="button" value="배달" style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+        <input class="textbox5" type="button" value="기타" style="font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+        
+        <script>
+          const textbox2Button = document.querySelector('.textbox2');
+          textbox2Button.addEventListener('click', () => {
+              textbox2Button.classList.toggle('purple-background');
+          });
+          const textbox3Button = document.querySelector('.textbox3');
+          textbox3Button.addEventListener('click', () => {
+              textbox3Button.classList.toggle('purple-background');
+          });
+          const textbox4Button = document.querySelector('.textbox4');
+          textbox4Button.addEventListener('click', () => {
+              textbox4Button.classList.toggle('purple-background');
+          });
+          const textbox5Button = document.querySelector('.textbox5');
+          textbox5Button.addEventListener('click', () => {
+              textbox5Button.classList.toggle('purple-background');
+          });
+
+          const title1 = document.querySelector('#title1');
+          title1.addEventListener('click', () => {
+              title1.classList.toggle('clicked');
+          });
+          const title2 = document.querySelector('#title2');
+          title2.addEventListener('click', () => {
+              title2.classList.toggle('clicked');
+          });
+          const title3 = document.querySelector('#title3');
+          title3.addEventListener('click', () => {
+              title3.classList.toggle('clicked');
+          });
+          const title4 = document.querySelector('#title4');
+          title4.addEventListener('click', () => {
+              title4.classList.toggle('clicked');
+          });
+          const title5 = document.querySelector('#title5');
+          title5.addEventListener('click', () => {
+              title5.classList.toggle('clicked');
+          });
+          const title6 = document.querySelector('#title6');
+          title6.addEventListener('click', () => {
+              title6.classList.toggle('clicked');
+          });
+          const title7 = document.querySelector('#title7');
+          title7.addEventListener('click', () => {
+              title7.classList.toggle('clicked');
+          });
+
+        </script>
+        <input class="button1" type="button" value="다음 단계로 넘어가기" style="color: #FFF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;">
+        <input class="button2" type="button" value="건너뛰기" style="color: #A100FF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;" onclick="location.replace('./use-step4.html');">
+
+        <script>
+          const button1 = document.querySelector('.button1');
+          const textbox2Buttons = document.querySelectorAll('.textbox2, .textbox3, .textbox4, .textbox5');
+          const bbttnnButtons = document.querySelectorAll('.bbttnn');
+      
+          button1.addEventListener('click', function() {
+            let anySelectedTextbox2 = false;
+            textbox2Buttons.forEach(button => {
+              if (button.classList.contains('purple-background')) {
+                anySelectedTextbox2 = true;
+              }
+            });
+      
+            let anySelectedBbttnn = false;
+            bbttnnButtons.forEach(button => {
+              if (button.classList.contains('clicked')) {
+                anySelectedBbttnn = true;
+              }
+            });
+      
+            if (anySelectedTextbox2 && anySelectedBbttnn) {
+              location.href = 'use-step4.html';
+            } else {
+              alert('원하는 단어를 눌러주세요.');
+            }
+          });
+        </script>
+    </div>
+
+    
+
+  </div>
+</body>
+</html>

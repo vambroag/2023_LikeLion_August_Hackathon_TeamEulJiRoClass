@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="use-step1.css" type="text/css">
+  <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+  <title>준비, 시장!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+  <!--<div class="side">
+    <div class="select"><img src="images/store 1.png" alt=""></div><p class="text">나의 가게 현황</p>
+    <hr class="sideline">
+    <div class="select"><img src="images/draw 1.png" alt=""></div><p class="text">가게 정보 수정</p>
+    <hr class="sideline">
+    <div class="select"><img src="images/eye 1.png" alt=""></div><p class="text">노출 수</p>
+  </div>-->
+
+  <div class="window">
+    <div class="backbox">
+      <div class="back" onclick="location.replace('../main/mainpage.html');">&lt;</div>
+      <div class="bangbub">사용 방법</div>
+    </div>
+
+    <h2 class="step1">1단계</h2>
+    <h2 class="guide">‘홍보/수정하기’ 사용법을 익히기 위한 단계입니다.<br>박스 안에 글자를 넣어보세요.</h2>
+
+    <div>
+        <div class="mission1"><span class="star">*</span>글자넣기</div>
+        <input class="textbox1" type="text" value="여기를 누른 뒤 ‘안녕하세요’를 입력해보세요" onfocus="this.value=''" onblur="this.value" style="color: #A100FF;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+        <div class="mission2"><span class="star">*</span>글자넣기</div>
+        <input class="textbox2" type="text" value="여기를 누른 뒤 ‘어렵지 않아요’를 입력해보세요" onfocus="this.value=''" onblur="this.value" style="color: #A100FF;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;">
+    
+        <input class="button1" type="button" value="다음 단계로 넘어가기" style="color: #FFF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;">
+        <input class="button2" type="button" value="건너뛰기" style="color: #A100FF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;" onclick="location.replace('./use-step2.html');">
+    </div>
+    
+    <script>
+      const textbox1 = document.querySelector('.textbox1');
+      const textbox2 = document.querySelector('.textbox2');
+      const button1 = document.querySelector('.button1');
+  
+      button1.addEventListener('click', function() {
+        const value1 = textbox1.value.trim(); // 입력값 앞뒤 공백 제거
+        const value2 = textbox2.value.trim();
+        if (value1 === "안녕하세요" && value2 === "어렵지 않아요") {
+          location.href = 'use-step2.html'; // 값이 있으면 다음 단계로 이동
+        } else {
+          // 값이 없으면 동작하지 않음
+          alert('정확히 입력해 주세요.');
+        }
+      });
+
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+    
+
+  </div>
+</body>
+</html>

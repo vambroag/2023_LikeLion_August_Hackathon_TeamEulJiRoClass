@@ -1,0 +1,339 @@
+:root {
+  --height-1: 29.07407407407407vh;
+}
+* {
+  -webkit-text-size-adjust: none;
+}
+
+
+input.created_search_input:focus {
+    outline: none;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../Pretendard-1.3.8/web/static/woff/Pretendard-Regular.woff") format("woff")
+}
+/*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+#map {
+  width: 100%;
+  height: 84.444444444444444%;
+  margin: 0 auto;
+}
+
+/*
+   * Optional: Makes the sample page fill the window.
+   */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.line1{
+  width:1px;
+  height:61.98347107438016%;
+  background-color: #FFFFFF;
+  margin: auto;
+}
+
+.padding1 {
+  width: 5.348837209302%;
+  height: 100%
+}
+
+/*main content*/
+
+.top_background {
+  width: 100%;
+  height: 15.555555555%;
+  margin: 0 auto;
+  background-color: #255ECE;
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_window {
+  position: relative;
+  height: 100%;
+  max-height: 1080px;
+  width: 430px;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.top_container {
+  width: 100%;
+  height: 15.5555555555%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.goback_container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.goback {
+  width: 15px;
+  height: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.goback_img {
+  width: 100%;
+  height: 100%;
+}
+
+.title1 {
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #FFFFFF;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0px;
+  width: auto;
+  height: auto;
+  padding-left: 2.325581395348%;
+}
+
+.searchbar_container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchbar {
+  width: 89.30232558139534%;
+  height: 29.166666666666666666666666666667%;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  border: 1px;
+  border-style: solid;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 2px;
+}
+
+.searchbar_text {
+  font-family: Pretendard;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: -0.08em;
+  text-align: left;
+  color: #FFFFFF;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0px;
+  width: auto;
+  height: auto;
+  padding-left: 6.806282722513%;
+}
+
+.search_img_container {
+  width: 20px;
+  height: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  position: relative;
+  right: 6.020942408376%;
+}
+
+.search_img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*JS로 추가하는 element*/
+
+.shop_info_container {
+  position: absolute;
+  top: 70.9259259259259%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 29.07407407407407%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 40px;
+  background-color: #255ECE;
+}
+
+.shop_info {
+  height: 61.464968152866242%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_img_container {
+  height: 58.5492227979274611%;
+
+}
+
+.profile_title {
+  margin: 0 auto;
+  padding-top: 13px;
+  padding-bottom: 8px;
+  color: #FFF;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.set_location {
+  width: 23.255813953488%;
+  height: 15.5440414507772%;
+  border-radius: 38.8px;
+  color: #FFFFFF;
+  border: 1px;
+  border-style: solid;
+  margin: 0 auto;
+  display: flex;
+}
+
+.set_location_text {
+  color: #FFF;
+  font-family: Pretendard;
+  font-size: 9.709px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.485px;
+  margin: auto;
+  padding: 0px;
+  width: auto;
+  height: auto;
+}
+
+.info_menu {
+  height: 38.535031847133758%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #255ECE;
+}
+
+.info_menu_1{
+  width: 33.333333333333333333333333333333%;
+  height: 100%;
+  display: flex;
+}
+
+.info_menu_2{
+  width: 33.333333333333333333333333333333%;
+  height: 100%;
+  display: flex;
+}
+
+.info_menu_3{
+  width: 33.333333333333333333333333333333%;
+  height: 100%;
+  display: flex;
+}
+
+.info_menu_content{
+  width: 30%;
+  height: 47.93388429752066%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.info_menu_img_container{
+  width:37px;
+  height:37px;
+  margin:0 auto;
+
+}
+
+.info_menu_img{
+  width:100%;
+  height:100%;
+
+}
+
+.info_menu_text{
+  font-family: Pretendard;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  color: #FFF;
+  padding-top: 8px;
+  margin:0 auto;
+}
+
+.profile_img {
+  align-self: center;
+  position: absolute;
+  top: -15.6050955414012738%;
+  width: calc(var(--height-1) * .51592356687898089);
+  aspect-ratio: 1/1;
+  border-radius: 90px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+
+.profile_image{
+  width:100%;
+  height:100%;
+}
+
+.bookmark_star{
+  width: 33px;
+  height: 33px;
+  position:absolute;
+  left: 86.2790697674418%;
+  top: 6.68789808917197%;
+}
+
+.bookmark_img{
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 430px){
+  .main_window {
+    width:100%;
+  }
+}

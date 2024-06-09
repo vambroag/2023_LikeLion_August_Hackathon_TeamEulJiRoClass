@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="research2.css" type="text/css">
+  <link href="./images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+  <title>준비, 시장!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+  <div class="window">
+    <div class="backbox">
+      <div class="back" onclick="location.href='../research.html'">&lt;</div>
+      <div class="my">
+        검색하기
+      </div>
+    </div>
+
+    <img src="../images/image 2.png" class="mainImg">
+    <div class="gradient">
+      <h2>쭈꾸미 먹고가유</h2>
+      <h4>쭈꾸미가 맛있고 사장님이 친절한 집</h4>
+
+      <img src="../images/star.png" id="star1" class="star" onclick="javascript:star()">
+     
+    </div>
+    
+    <h1 class="photo">사진</h1>
+    
+    <div class="rectangle"><img src="../images/수산시장1.png" class="fishPhoto"></div>
+    <div class="rectangle2"><img src="../images/수산시장2.png" class="fishPhoto"></div>
+    <div class="rectangle3"><img src="../images/수산시장3.png" class="fishPhoto"></div>
+
+    <hr class="hLine">
+
+    <h1 class="review">리뷰</h1>
+    <p class="reviewCount">1004개</p>
+
+    <div class="bigRectangle">
+      <div class="rect1"><p class="review5">가게도 깨끗하고 맛있어요!</p><p class="userName">주짱</p><p class="nim">님</p></div>
+      <div class="rect2"><p class="review5">나쁘지 않네요.</p><p class="userName2">범택연</p><p class="nim">님</p></div>
+      <div class="rect3"><p class="review5">사장님이 친절하세요.</p><p class="userName3">달기태</p><p class="nim">님</p></div>
+      <div class="rect4"><p class="review5">너무 맛있어요!!</p><p class="userName4">유나 아니고 윤하</p><p class="nim">님</p></div>
+      <div class="rect5"><p class="review5">자주 가는 맛집 입니다.</p><p class="userName5">수박공주</p><p class="nim">님</p></div>
+
+      <p class="plus">더보기</p>
+      <img src="../images/Vector 4.png" class="homePlus">
+    </div>
+
+    <div class="lastRect">
+      <p class="lastText" onclick="javascript:alert1()">문의하기</p>
+    </div>
+  </div>
+  
+  <div class="quick_menu_container">
+    <div class="quick_mystore">
+      <div class="quick_img_mystore_container">
+        <img src="../images/store.png" class="quick_img_mystore" />
+      </div>
+      <p class="quick_img_mystore_text">나의 가게 현황</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_editstore">
+      <div class="quick_img_editstore_container">
+        <img src="../images/draw.png" class="quick_img_editstore" />
+      </div>
+      <p class="quick_img_editstore_text">가게 정보 수정</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_count">
+      <div class="quick_img_count_container">
+        <img src="../images/eye.png" class="quick_img_count" />
+      </div>
+      <p class="quick_img_count_text">노출 수</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_help">
+      <div class="quick_img_help_container">
+        <img src="../images/help-web-button (1).png" class="quick_img_help" />
+      </div>
+      <p class="quick_img_help_text">사용 방법</p>
+    </div>
+  </div>
+  <script>
+    function alert1(){
+      alert('1:1문의는 고객센터를 통해 문의해주시기 바랍니다.');
+    }
+    function star(){
+      if(document.getElementById("star1").className == "star"){
+        document.getElementById("star1").src = "../images/star.png";
+        document.getElementById("star1").className = "star1";
+      } else {
+        document.getElementById("star1").src = "../images/star1.png";
+        document.getElementById("star1").className = "star";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="use-step2.css" type="text/css">
+  <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+  <title>준비, 시장!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+
+  <div class="window">
+    <div class="backbox">
+      <div class="back" onclick="location.href='use-step1.html'">&lt;</div>
+      <div class="bangbub">
+      사용 방법
+      </div>
+    </div>
+
+    <h2 class="step2">2단계</h2>
+    <h2 class="guide">‘홍보/수정하기’ 사용법을 익히기 위한 단계입니다.<br>원 안에 사진을 넣어보세요</h2>
+
+    <!-- 이미지 업로드를 위한 input 요소 추가 -->
+    <input class="pic-load" type="file" id="input-file" style="display: none;">
+
+    <img class="profile" src="../images/동그라미.png" alt="">
+
+    <div>
+        <div class="mission1"><span class="star">*</span>사진 등록</div>
+        <div style="overflow: hidden;">
+            <!-- 첫 번째 take-photo 요소 -->
+            <div class="take-photo1">
+                <img src="../images/dslr-camera (1).png" alt="" style="margin-top: 39px; margin-left: 67px; width: 49px; height: 49px;">
+                <p style="margin-top: -1px;text-align: center;color: #A100FF;font-family: Pretendard;font-size: 15px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.75px;opacity: 0.4;">카메라로 촬영하기</p>
+            </div>
+            <!-- 두 번째 take-photo 요소 -->
+            <div class="take-photo2">
+                <label for="input-file">
+                    <img src="../images/photo (1).png" alt="" style="margin-top: 39px; margin-left: 67px; cursor: pointer; width: 49px; height: 49px;">
+                </label>
+                <p style="margin-top: -1px; text-align: center; color: #A100FF; font-family: Pretendard; font-size: 15px; font-style: normal; font-weight: 400; line-height: normal; letter-spacing: -0.75px; opacity: 0.4;">사진 불러오기</p>
+            </div>
+            <script>
+                const inputElement = document.getElementById('input-file');
+                const profileImage = document.querySelector('.profile');
+        
+                inputElement.addEventListener('change', () => {
+                    const file = inputElement.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = (event) => {
+                            profileImage.src = event.target.result;
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            </script>
+        </div>
+
+        <input class="button1" type="button" value="다음 단계로 넘어가기" onclick="location.href='use-step3.html'" style="color: #FFF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;">
+        <input class="button2" type="button" value="건너뛰기" style="color: #A100FF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;" onclick="location.replace('./use-step3.html');">
+    </div>
+
+  </div>
+</body>
+</html>

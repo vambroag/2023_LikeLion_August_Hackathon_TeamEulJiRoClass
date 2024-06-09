@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="use-step4.css" type="text/css">
+  <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+  <title>준비, 시장!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+  <div class="window">
+    <div class="backbox">
+      <div class="back" onclick="location.href='use-step3.html'">&lt;</div>
+      <div class="bangbub">
+      사용 방법
+      </div>
+    </div>
+
+    <h2 class="step4">4단계</h2>
+    <h2 class="guide">‘홍보/수정하기’ 사용법을 익히기 위한 단계입니다.<br>원하는 단계를 눌러보세요.</h2>
+
+    <div>
+        <div class="mission1"><span class="star">*</span>누르기</div>
+        
+        <form>
+          <input class="first" type="radio" id="option1" name="option" value="1">
+          <input class="sec" type="radio" id="option2" name="option" value="2">
+          <input class="sec" type="radio" id="option3" name="option" value="3">
+          <input class="sec" type="radio" id="option4" name="option" value="4">
+          <input class="sec" type="radio" id="option5" name="option" value="5">
+          <hr class="sun">
+          <label class="first-2" for="option1">1</label>
+          <label class="first-3" for="option2">2</label>
+          <label class="first-4" for="option3">3</label>
+          <label class="first-5" for="option4">4</label>
+          <label class="first-6" for="option5">5</label>
+        </form>
+        
+        <label class="first-1" for="option1">매우 낮음</label>
+        <label class="sec-2" for="option2">낮음</label>
+        <label class="sec-3" for="option3">보통</label>
+        <label class="sec-4" for="option4">높음</label>
+        <label class="sec-5" for="option5">매우 높음</label>
+
+        <input class="button1" type="button" value="다음 단계로 넘어가기" style="color: #FFF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;">
+        <input class="button2" type="button" value="건너뛰기" style="color: #A100FF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;" onclick="location.replace('./use-step5.html');">
+    
+        <script>
+          const button1 = document.querySelector('.button1');
+          const radioOptions = document.querySelectorAll('input[name="option"]');
+      
+          button1.addEventListener('click', function() {
+            let anySelected = false;
+            radioOptions.forEach(option => {
+              if (option.checked) {
+                anySelected = true;
+              }
+            });
+      
+            if (anySelected) {
+              location.href = 'use-step5.html';
+            } else {
+              alert('옵션을 선택해주세요.');
+            }
+          });
+        </script>
+    
+    </div>
+
+    
+
+  </div>
+</body>
+</html>

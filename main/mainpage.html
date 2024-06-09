@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+    <title>준비, 시장!</title>
+</head>
+<body>
+    <div class="background">
+        <div class="main_window">
+            <div class="main_content">
+                <div class="top_container">
+                    <div class="profile_img_container" id="profile_img_container">
+                        <img src="../images/image 2.png" class="profile_img" />
+                    </div>
+                    
+                    <img src="../images/mainlogo1.png" class="small_logo" id="small_logo" />
+                    <img src="../images/barmenu.png" class="bar_menu_img" onclick="location.href='../samjulvar/mainpage2.html';"/>
+                    <div class="fast_button" id="to_map">
+                        <img src="../images/cross.png" class="fast_button_cross" />
+                    </div>
+                </div>
+                <div class="search_bar" id="search_input">
+                    <p class="search_bar_text" id="searchbar_text">지역 또는 점포명을 검색하세요</p>
+                    <div class="search_button" id="search_button" onclick="alert('정보를 검색합니다');">
+                        <img src="../images/magnifying-glass (2).png" class="search_button_img" id="search_button_img" />
+                    </div>
+                </div>
+                <div class="sep_line"></div>
+                <div class="ad_container">
+                    <img src="../images/adbanner1.png" class="adbanner" /> 
+                </div>
+                <p class="title1">우리 시장 알려드립니다</p>
+                <div class="notice1">
+                    <p class="notice_text">🔥범근이네 수산, 크기만 큰 양식 하우스 새우 X , 자연스럽게 바다에서 자란 노지 새우 O</p>
+                </div>
+                <div class="padding3"></div>
+                <div class="notice2">
+                    <p class="notice_text">🧨전국 곳곳에 야시장 행사 운영 특성화시장 56곳 선발🧨</p>
+                </div>
+                <div class="padding3"></div>
+                <div class="notice3">
+                    <p class="notice_text">📢절대안전! 전통시장이 모두를 지킵니다</p>
+                </div>
+                <p class="title2">추천 점포</p>
+                <div class="recommend_slide_box">
+                    <div class="recommends_container">
+                        <div class="padding4"></div>
+                        <div class="recommend1_container">
+                            <div class="recommend_img">
+                                <img src="../images/market1.jpg" class="rec_img" />
+                            </div>
+                            <div class="recommend_description">
+                                <p class="recommend_title">범근이네 수산</p>
+                                <p class="recommend_text">안녕하세요 범근이네 수산입니다. 싱싱한 해산물을 24시간 연중무휴 합리적인 가격에 팔고 있습니다!</p>
+                            </div>
+                        </div>
+                        <div class="padding5"></div>
+                        <div class="recommend2_container">
+                            <div class="recommend_img">
+                                <img src="../images/market2.jpg" class="rec_img" />
+                            </div>
+                            <div class="recommend_description">
+                                <p class="recommend_title">기태네 철물점</p>
+                                <p class="recommend_text">안녕하세요 기태네 철물점입니다. 방문/전화/출장 주문 제작 가능합니다.</p>
+                            </div>
+                        </div>
+                        <div class="padding5"></div>
+                        <div class="recommend3_container">
+                            <div class="recommend_img">
+                                <img src="../images/market3.jpg" class="rec_img" />
+                            </div>
+                            <div class="recommend_description">
+                                <p class="recommend_title">주은이네 옷가게</p>
+                                <p class="recommend_text">안녕하세요 주은이네 옷가게입니다. 설레는 봄, 시원한 여름, 풍성한 가을, 포근한 겨울, 각 계절마다 입을 수 있는 옷들이 여러분을 기다립니다.</p>
+                            </div>
+                        </div>
+                        <div class="padding5"></div>
+                        <div class="recommend4_container">
+                            <div class="recommend_img">
+                                <img src="../images/market4.jpg" class="rec_img" />
+                            </div>
+                            <div class="recommend_description">
+                                <p class="recommend_title">수진이네 정육점</p>
+                                <p class="recommend_text">안녕하세요 수진이네 정육점입니다. 생으로 바로 먹을 수 있는 건강하고 싱싱한 국내산 고기팝니다.</p>
+                            </div>
+                        </div>
+                        <div class="padding5"></div>
+                        <div class="recommend5_container">
+                            <div class="recommend_img">
+                                <img src="../images/market5.jpg" class="rec_img" />
+                            </div>
+                            <div class="recommend_description">
+                                <p class="recommend_title">윤하네 김밥</p>
+                                <p class="recommend_text">안녕하세요 윤하네 김밥입니다. 언제나 정성들여 만든 김밥들이 장인의 온기를 머금은채 여러분을 기다립니다.</p>
+                            </div>
+                        </div>
+                        <div class="padding4"></div>
+                    </div>
+                </div>
+                <p class="title3">지도</p>
+                <div class="map_container" id="map"></div>
+                <div class="padding6"></div>
+            </div>
+        </div>
+        <div class="quickmenu_place"></div>
+    </div>
+
+    <div class="quick_menu_container" id="quick_menu_container">
+        <div class="quick_mystore">
+            <div class="quick_img_mystore_container" id="quick_img_mystore_container">
+                <img src="../images/store.png" class="quick_img_mystore" />
+            </div>
+            <p class="quick_img_mystore_text">나의 가게 현황</p>
+        </div>
+        <div class="quick_line"></div>
+        <div class="quick_editstore">
+            <div class="quick_img_editstore_container" id="quick_img_editstore_container">
+                <img src="../images/draw.png" class="quick_img_editstore" />
+            </div>
+            <p class="quick_img_editstore_text">가게 정보 수정</p>
+        </div>
+        <div class="quick_line"></div>
+        <div class="quick_count">
+            <div class="quick_img_count_container" id="quick_img_count_container">
+                <img src="../images/eye.png" class="quick_img_count" />
+            </div>
+            <p class="quick_img_count_text">노출 수</p>
+        </div>
+        <div class="quick_line"></div>
+        <div class="quick_help">
+            <div class="quick_img_help_container" id="quick_img_help_container">
+                <img src="../images/help-web-button (1).png" class="quick_img_help" />
+            </div>
+            <p class="quick_img_help_text">사용 방법</p>
+        </div>
+    </div>
+    <script type="module" src="./main_map_js.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPIfvcPxx3NbnMmOQjha88qVIx_Z_Qhjo&callback=initMap">
+    </script>
+    <script type="text/javascript" src="./main_js.js"></script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+:root{
+    --width1:50%;
+}
+
+
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.wall {
+    width: 100%;
+    height: 84px;
+    flex-shrink: 0;
+    background: #00A863;
+    position: relative; /* 추가 */
+    z-index: 1;
+}
+
+.bottom-wall {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6rem;
+    background: #F1F1F1;
+    position: fixed; /* 추가 */
+    z-index: 1;
+}
+
+.bottom-box {
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    height: 6rem;
+    width: 430px;
+    height: 84px;
+    background: #F1F1F1;
+    position: fixed; /* 추가 */
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar {
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.bar-content {
+    margin-top: 10px;
+    color: #000;
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.window {
+    min-height: 130vh;
+    width: 430px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+}
+
+.backbox{
+    background: #00A863;
+    width: 430px;
+    height: 84px;
+    position: absolute;
+    top: 0; /* 추가 */
+    left: 50%; /* 추가 */
+    transform: translateX(-50%); /* 추가 */
+    z-index: 2; /* 추가 */
+  }
+
+.hongbosujung {
+    position: absolute;
+    top: 31px;
+    left: 46px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+.back {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 23px;
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.input {
+    margin-top: 520px;
+    margin-left: 133px;
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -3.294px;
+    position: absolute;
+}
+
+.img123 {
+    margin-top: 441px;
+    margin-left: 182.88px;
+    width: 64.235px;
+    height: 64.235px;
+    flex-shrink: 0;
+}
+
+
+.button1 {
+    margin-top: 854px;
+    margin-left: 23px;
+    width: 384px;
+    height: 51px;
+    flex-shrink: 0;
+    border: solid 0px #00A863;
+    border-radius: 40px;
+    background: #00A863;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+
+
+.quick_menu_container {
+    position: fixed;
+    width: 145px;
+    height: 462px;
+    top: 18.721478996840750419283123366746%;
+    left: calc(var(--width1) - 387px);
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick_mystore {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 55px;
+}
+
+.quick_editstore {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 55px;
+}
+
+.quick_count {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 52px;
+}
+
+.quick_help {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 58px;
+}
+
+
+.quick_img_mystore_container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_mystore {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_editstore_container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_editstore {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_count_container {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_count {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_help_container {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_help {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_mystore_text {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_editstore_text {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_count_text {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_help_text {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_line {
+    width: 93px;
+    border-color: #D9D9D9;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    body {
+        height: calc(100vh + 100px);
+    }
+    .quick_menu_container {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        top: calc(100% - 100px);
+        left:0px;
+        background-color: #F1F1F1;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .quick_mystore {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 55px;
+        margin:auto;
+    }
+    
+    .quick_editstore {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 55px;
+        margin:auto;
+    }
+    
+    .quick_count {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 52px;
+        margin:auto;
+        padding-bottom: 17px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .quick_help {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 58px;
+        margin:auto;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    
+    
+    .quick_img_mystore_container {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_mystore {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_editstore_container {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_editstore {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_count_container {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_count {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_help_container {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_help {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_mystore_text {
+        font-family: "Pretendard";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_editstore_text {
+        font-family: "Pretendard";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_count_text {
+        font-family: "Pretendard";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_help_text {
+        font-family: "Pretendard";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_line {
+        width: 0px;
+        height: 100%;
+        border-color: #D9D9D9;
+        border-width: 0px;
+        border-style: solid;
+    }
+
+    .quickmenu_place{
+        width: 100%;
+        height: 100px;
+    }
+}

@@ -1,0 +1,4 @@
+AIzaSyBPIfvcPxx3NbnMmOQjha88qVIx_Z_Qhjo
+
+C:\Program Files\Google\Chrome\Application>   :  실행 밑 명령어
+chrome.exe --disable-web-security --allow-file-access-from-files

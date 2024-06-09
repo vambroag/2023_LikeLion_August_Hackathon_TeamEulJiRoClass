@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mainpage2.css" type="text/css">
+  <link href="./images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+  <title>준비, 시장!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+  <div class="window">
+    <div class="grayWindow">
+        <img src="../images/logo2.png" class="minLogo" onclick="location.href='../main/mainpage.html'">
+        <img src="../images/group.png" class="groupIcon" onclick="location.href='../main/mainpage.html'">
+        <img src="../images/map (3).png" class="mapIcon" onclick="location.href='../map/map.html'">
+
+        <img src="../images/image 2.png" class="circle1">
+        <div class="circle2">
+          <img src="../images/fish.png" class="fish">
+        </div>
+
+        <p class="storeName">쭈꾸미 먹고 가요</p>
+        <p class="storeInfo">대천항 수산시장</p>
+
+        <div class="circle3">
+          <img src="../images/dollar.png" class="circles">
+          <p class="circleInfo">19.6</p>
+          <p class="circleName">수익</p>
+
+          <hr class="hrLine">
+
+          <img src="../images/review.png" class="circles2">
+          <p class="circleInfo2">2000</p>
+          <p class="circleName2">리뷰</p>
+
+          <hr class="hrLine2">
+
+          <img src="../images/ad.png" class="circles3">
+          <p class="circleInfo3">28</p>
+          <p class="circleName3">광고 노출 횟수</p>
+        </div>
+
+        <p class="menu">메뉴</p>
+
+        <div class="redBox" onclick="location.href='../research/research.html';">
+          <p class="boxName">검색하기</p>
+          <img src="../images/magnifying-glass (1).png" class="boxImg">
+        </div>
+
+        <div class="greenBox" id="green" onclick="location.href='../myadedit/cash-1.html';">
+          <p class="boxName2">홍보/<br>수정하기</p>
+          <img src="../images/megaphone.png" class="boxImg2">
+        </div>
+
+        <div class="blueBox" id="blue" onclick="location.href='../map/map.html';">
+          <p class="boxName3">지도보기</p>
+          <img src="../images/location.png" class="boxImg3">
+        </div>
+
+        <div class="yellowBox" id="yellow" onclick="location.href='../mypage/my1.html';">
+          <p class="boxName4">설정하기</p>
+          <img src="../images/settings.png" class="boxImg4">
+        </div>
+    </div>
+  </div>
+
+  <div class="quick_menu_container">
+    <div class="quick_mystore">
+      <div class="quick_img_mystore_container">
+        <img src="../images/store.png" class="quick_img_mystore" />
+      </div>
+      <p class="quick_img_mystore_text">나의 가게 현황</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_editstore">
+      <div class="quick_img_editstore_container">
+        <img src="../images/draw.png" class="quick_img_editstore" />
+      </div>
+      <p class="quick_img_editstore_text">가게 정보 수정</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_count">
+      <div class="quick_img_count_container">
+        <img src="../images/eye.png" class="quick_img_count" />
+      </div>
+      <p class="quick_img_count_text">노출 수</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_help">
+      <div class="quick_img_help_container">
+        <img src="../images/help-web-button (1).png" class="quick_img_help" />
+      </div>
+      <p class="quick_img_help_text">사용 방법</p>
+    </div>
+  </div>
+  <script>
+    document.getElementById("quick_img_mystore_container").addEventListener("click", () => {
+      location.replace('../mypage/my2.html');
+    });
+    document.getElementById("quick_img_editstore_container").addEventListener("click", () => {
+      location.replace('../myadedit/cash-1.html');
+    });
+    document.getElementById("quick_img_count_container").addEventListener("click", () => {
+      location.replace('../mypage/my1.html');
+    });
+    document.getElementById("quick_img_help_container").addEventListener("click", () => {
+      location.replace('../usesteps/use-step1.html');
+    });
+</script>
+</body>
+</html>

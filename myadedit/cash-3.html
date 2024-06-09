@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cash-3.css" type="text/css">
+  <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon">
+  <title>준비, 시작!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+
+
+  <div class="window">
+    <div class="backbox">
+      <div class="back" onclick="location.href='cash-2.html'">&lt;</div>
+      <div class="my">
+        홍보/수정하기
+      </div>
+    </div>
+
+    <div class="t0">
+      <img src="../images/image 2.png" class="profile" alt="">
+      <h2 class="profile-title">쭈꾸미 먹고가유</h2>
+      <h4 class="profile-sulmyeong">쭈꾸미가 맛있고 사장님이 친절한 집</h4>
+    </div>
+
+
+    <div class="tl">
+      <div class="rect">+</div>
+      <img src="../images/card.png" class="card-img" alt="">
+      <hr class="sun">
+      <p class="ppp">결제금액<span>100,000</span></p>
+      <hr class="sun">
+      <p class="info">결제일시<span class="card-info">2023.08.13</span></p>
+      <p class="info">결제카드<span class="card-info">신한카드</span></p>
+      <p class="info">카드번호<span class="card-info">76120200046361</span></p>
+      <input class="btn" type="button" value="휴대폰 인증"
+        style="color: #00A863;font-family: Pretendard;font-size: 13px;font-style: normal;font-weight: 400;line-height: normal;letter-spacing: -0.65px;"
+        onclick="alert('인증완료!')">
+    </div>
+
+    <div class="warn-box">
+      <img src="../images/exclamation-mark (1).png" class="warn" alt="">
+      <div class="warn-content">결제용 카드는 신용카드/체크카드/법인카드/개인카드 모두 등록 가능합니다.</div><br>
+      <img src="../images/exclamation-mark (1).png" class="warn" alt="">
+      <div class="warn-content" style="line-height:20px;padding-top:20px">법인카드 등록이 어려운 경우, 개인카드를 통해 비용을 처리 또는 추후
+        법인<br>카드로 변경 후 재결제할 수 있습니다.</div><br>
+      <img src="../images/exclamation-mark (1).png" class="warn" alt="">
+      <div class="warn-content">결제용 카드는 신용카드/체크카드/법인카드/개인카드 모두 등록 가능합니다.</div>
+      <hr class="sun" style="width: 384px;margin-top:82px">
+      <p class="ppp"
+        style="color: #00A863;margin-left:-11.5px;text-align: center;font-family: Pretendard;font-size: 12px;font-style: normal;font-weight: 500;line-height: 166.836%; /* 20.02px */letter-spacing: -0.96px;">
+        아래 버튼을 클릭하면 광고 수수료가 결제됩니다</p>
+    </div>
+
+    <input class="button1" type="button" value="광고 수수료 결제"
+      style="color: #FFF;font-family: Pretendard;font-size: 20px;font-style: normal;font-weight: 600;line-height: normal;"
+      onclick="location.href='cash-4.html'">
+
+
+  </div>
+
+  <div class="quick_menu_container">
+    <div class="quick_mystore">
+      <div class="quick_img_mystore_container">
+        <img src="../images/store.png" class="quick_img_mystore" style="cursor: pointer;"
+          onclick="location.replace('../mypage/my2.html');" />
+      </div>
+      <p class="quick_img_mystore_text" style="cursor: pointer;">나의 가게 현황</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_editstore">
+      <div class="quick_img_editstore_container">
+        <img src="../images/draw.png" class="quick_img_editstore" style="cursor: pointer;"
+          onclick="location.replace('../myadedit/cash-1.html');" />
+      </div>
+      <p class="quick_img_editstore_text" style="cursor: pointer;">가게 정보 수정</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_count">
+      <div class="quick_img_count_container">
+        <img src="../images/eye.png" class="quick_img_count" style="cursor: pointer;"
+          onclick="location.replace('../mypage/my1.html');" />
+      </div>
+      <p class="quick_img_count_text" style="cursor: pointer;">노출 수</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_help">
+      <div class="quick_img_help_container">
+        <img src="../images/help-web-button (1).png" class="quick_img_help" style="cursor: pointer;"
+          onclick="location.replace('../usesteps/use-step1.html');" />
+      </div>
+      <p class="quick_img_help_text" style="cursor: pointer;">사용 방법</p>
+    </div>
+  </div>
+  <script>
+    document.getElementById("quick_img_mystore_container").addEventListener("click", () => {
+      location.replace('../mypage/my2.html');
+    });
+    document.getElementById("quick_img_editstore_container").addEventListener("click", () => {
+      location.replace('../myadedit/cash-1.html');
+    });
+    document.getElementById("quick_img_count_container").addEventListener("click", () => {
+      location.replace('../mypage/my1.html');
+    });
+    document.getElementById("quick_img_help_container").addEventListener("click", () => {
+      location.replace('../usesteps/use-step1.html');
+    });
+  </script>
+</body>
+
+</html>

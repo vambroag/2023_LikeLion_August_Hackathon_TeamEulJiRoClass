@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='./select2/select2/dist/css/select2.min.css' rel='stylesheet'
+        type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+    <title>준비, 시장!</title>
+</head>
+
+<body>
+    <!--The div element for the map -->
+    <div class="top_background"></div>
+    <div class="main_window" id="main_window">
+        <div class="top_container">
+            <div class="goback_container">
+                <div class="padding1"></div>
+                <div class="goback" id="go_back">
+                    <img src="../images/goback.png" class="goback_img" />
+                </div>
+                <p class="title1">지도보기</p>
+            </div>
+            <div class="searchbar" id="search_input">
+                <p class="searchbar_text" id="searchbar_text">지역 또는 점포명을 검색하세요</p>
+                <div class="search_img_container" id="search_img_container" onclick="alert('정보를 검색합니다');">
+                    <img src="../images/magnifying-glass.png" class="search_img" id="search_img" />
+                </div>
+            </div>
+        </div>
+        <div id="map">
+        </div>
+        <div style='width: 100%; height: 8.175%; display: flex; margin: 0 auto; flex-direction: column; position: absolute; top: 15.5555555555%; background: linear-gradient(180deg, rgb(37, 94, 206), rgba(37, 94, 206, 0.7));'>
+            <select id='social' class="selectcontainer" style='width: 92.093023255813953488372093023256%; height: 45.603304898331455550190460861634%; margin: auto;'>
+                <option value=''>여기를 누른 후, 구체적인 항목을 선택해보세요</option>
+                <option value='meaticon'>축산</option>
+                <option value='fishicon'>수산</option>
+                <option value='fruitsicon'>청과</option>
+                <option value='restauranticon'>음식</option>
+
+                <option value=''>------------------</option>
+
+                <option value='clothesicon'>의류</option>
+                <option value='shoesicon'>신발</option>
+                <option value='accessoryicon'>악세서리</option>
+
+                <option value=''>------------------</option>
+
+                <option value='dailyicon'>생활용품</option>
+                <option value='bedsicon'>침구</option>
+                
+                <option value=''>------------------</option>
+
+                <option value='crafticon'>공방</option>
+                <option value='booksicon'>도서</option>
+                <option value='penicon'>문구</option>
+            </select>
+        </div>
+        <div style='width: 100%; height: 6%; display: flex; margin: 0 auto; flex-direction: column; position: absolute; top: 23.7305555555%; background: linear-gradient(180deg, rgb(37, 94, 206, 0.7), rgba(37, 94, 206, 0.05));'></div>
+
+
+        <!-- hi -->
+    </div>
+    <!-- prettier-ignore -->
+    <script type="module" src="./map_js.js"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPIfvcPxx3NbnMmOQjha88qVIx_Z_Qhjo&callback=initMap">
+        </script>
+    <script type="text/javascript" src="./scripts.js"></script>
+    
+</body>
+
+</html>

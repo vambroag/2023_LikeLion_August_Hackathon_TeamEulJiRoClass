@@ -1,0 +1,287 @@
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+}
+
+.wall {
+    width: 100%;
+    height: 84px;
+    flex-shrink: 0;
+    background: #A100FF;
+    position: relative; /* 추가 */
+    z-index: 1;
+}
+
+.side {
+    margin-top: 192px;
+    margin-right: 600px;
+    width: 145px;
+    height: 368px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #F6F6F6;
+    position: absolute;   /*이부분 수정하면 따라 내려옴*/
+    cursor: pointer;
+}
+
+.sideline {
+    margin-top: 30px;
+    width: 93px;
+    border: thin solid;
+    color: #D9D9D9;
+}
+
+.select {
+    margin-top: 35px;
+    margin-left: 58px;
+    width: 30px;
+    height: 30px;
+}
+
+.text {
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+.window {
+    min-height: 130vh;
+    width: 430px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+}
+
+.backbox{
+    background: #A100FF;
+    width: 430px;
+    height: 84px;
+    position: absolute;
+    top: 0; /* 추가 */
+    left: 50%; /* 추가 */
+    transform: translateX(-50%); /* 추가 */
+    z-index: 2; /* 추가 */
+  }
+
+.bangbub {
+    position: absolute;
+    top: 31px;
+    left: 46px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+.back {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 23px;
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.step4 {
+    margin-top: 232px;
+    margin-left: 23px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.75px;
+    position: absolute;
+}
+
+.guide {
+    margin-top: 280px;
+    margin-left: 23px;
+    width: 400px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.836%; /* 24.134px */
+    letter-spacing: -1.36px;
+    position: absolute;
+}
+
+.mission1 {
+    margin-top: 461px;
+    margin-bottom: 23px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.75px;
+}
+
+.star {
+    margin-left: 34px;
+    color: #FF2424;
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.75px;
+}
+
+.slide {
+    width: 14px;
+height: 14px;
+flex-shrink: 0;
+fill: #FFF;
+stroke-width: 1px;
+stroke: #A100FF;
+}
+
+
+.first{
+    width: 18px;
+    height: 18px;
+    margin-left: 38px;
+    font-family: "Pretendard";
+}
+
+.first-2{
+    width: 18px;
+    height: 18px;
+    margin-left: 42px;
+    font-family: "Pretendard";
+}
+
+.first-1 {
+    margin-left: 17px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.first-3 {
+    margin-left: 69.5px;
+    color: #A100FF;
+    font-family: "Pretendard";
+}
+
+.first-4 {
+    margin-left: 69.5px;
+    color: #A100FF;
+    font-family: "Pretendard";
+}
+.first-5 {
+    margin-left: 69.5px;
+    color: #A100FF;
+    font-family: "Pretendard";
+}
+.first-6 {
+    margin-left: 70px;
+    color: #A100FF;
+    font-family: "Pretendard";
+}
+
+.sun {
+    margin-top: -14.5px;
+    width: 350px;
+    height: 1.5px;
+    background: #A100FF;
+}
+
+.sec {
+    margin-left: 60px;
+    width: 18px;
+    height: 18px;
+}
+.sec-1 {
+    margin-left: 72px;
+    color: #A100FF;
+    font-family: "Pretendard";
+}
+
+.sec-2 {
+    margin-left: 35px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.sec-3 {
+    margin-left: 52px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.sec-4 {
+    margin-left: 53px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.sec-5 {
+    margin-left: 34px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+label {
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.6px;
+}
+
+
+
+.button1 {
+    margin-top: 217px;
+    margin-left: 23px;
+    width: 384px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #A100FF;
+    cursor: pointer;
+}
+
+.button2 {
+    margin-top: 18px;
+    margin-left: 23px;
+    width: 384px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 1px solid #A100FF;
+    background: #FFF;
+    cursor: pointer;
+}

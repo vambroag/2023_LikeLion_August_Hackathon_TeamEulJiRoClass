@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="my1.css" type="text/css">
+  <link href="../images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+  <title>준비, 시장!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+  <div class="window">
+    <div class="backbox">
+      <div class="back" onclick="location.href='../main/mainpage.html';">&lt;</div>
+      <div class="my">
+        마이페이지
+      </div>
+    </div>
+
+    <div class="plus" style="color:white">
+      추가
+    </div>
+
+    <img src="../images/image 2.png" class="pic">
+
+    <div class="title">
+      <p>쭈꾸미 먹고 가유</p>
+      <p class="where">대천항 수산시장</p>
+    </div>
+
+    <div class="info">
+      <table>
+        <tr>
+          <td><img class="img1" src="../images/dollar.png" alt=""></td>
+          <td><img class="img1" src="../images/review.png" alt=""></td>
+          <td><img class="img1" src="../images/ad.png" alt=""></td>
+        </tr>
+        <tr>
+          <td>19.6</td>
+          <td>1104</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td class="td2">수익</td>
+          <td class="td2">리뷰</td>
+          <td class="td2">광고 노출 횟수</td>
+        </tr>
+      </table>
+    </div>
+
+    <button type="button" class="btn1" onclick="location.replace('../myadedit/cash-2.html');">가게 정보 수정하기!</button>
+    <button type="button" class="btn2" onclick="location.replace('./my2.html');">나의 가게 현황</button>
+    <hr class="sun">
+
+    <h2 class="set">설정</h2>
+
+    <div class="menu">
+      <div>
+        <div class="content1" style="margin-top: 21px">알림 표시<input type="button" class="check1" value="ON"
+            onclick="toggleButton(this)"></div>
+        <hr class="nanugi">
+      </div>
+
+      <div>
+        <div class="content1">광고성 메시지 수신<input type="button" class="check1-1" value="ON" onclick="toggleButton(this)">
+        </div>
+        <hr class="nanugi">
+      </div>
+
+      <div>
+        <div class="content1">나의 위치 변경<div class="map"></div>
+        </div>
+        <hr class="nanugi">
+      </div>
+
+      <div>
+        <div class="content1">로그아웃<button type="button" class="check2" onclick="alert('금방 올거죠??^^')">로그아웃</button></div>
+        <hr class="nanugi">
+      </div>
+
+      <div>
+        <div class="content1">회원탈퇴<button type="button" class="check2"
+            onclick="alert('안녕은 영원한 헤어짐은 아니겠지요~')">회원탈퇴</button></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="quick_menu_container" id="quick_menu_container">
+    <div class="quick_mystore">
+      <div class="quick_img_mystore_container" id="quick_img_mystore_container" style="cursor: pointer;" onclick="location.replace('./my2.html');">
+        <img src="../images/store.png" class="quick_img_mystore" />
+      </div>
+      <p class="quick_img_mystore_text">나의 가게 현황</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_editstore">
+      <div class="quick_img_editstore_container" id="quick_img_editstore_container" style="cursor: pointer;" onclick="location.replace('../myadedit/cash-1.html');">
+        <img src="../images/draw.png" class="quick_img_editstore" />
+      </div>
+      <p class="quick_img_editstore_text">가게 정보 수정</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_count">
+      <div class="quick_img_count_container" id="quick_img_count_container" >
+        <img src="../images/eye.png" class="quick_img_count" />
+      </div>
+      <p class="quick_img_count_text">노출 수</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_help">
+      <div class="quick_img_help_container" id="quick_img_help_container" style="cursor: pointer;" onclick="location.replace('../usesteps/use-step1.html');">
+        <img src="../images/help-web-button (1).png" class="quick_img_help" />
+      </div>
+      <p class="quick_img_help_text">사용 방법</p>
+    </div>
+  </div>
+  <script>
+    function toggleButton(button) {
+      button.classList.toggle("on");
+      button.value = (button.value === "ON") ? "OFF" : "ON";
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+
+    const input_search_text_action = document.getElementById("search_input");
+    input_search_text_action.addEventListener("click", input_search_text);
+
+
+    document.getElementById("quick_img_mystore_container").addEventListener("click", () => {
+      location.replace('./my2.html');
+    });
+    document.getElementById("quick_img_editstore_container").addEventListener("click", () => {
+      location.replace('../myadedit/cash-1.html');
+    });
+    document.getElementById("quick_img_help_container").addEventListener("click", () => {
+      location.replace('../usesteps/use-step1.html');
+    });
+
+  </script>
+</body>
+
+</html>

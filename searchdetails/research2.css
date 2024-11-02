@@ -1,0 +1,758 @@
+:root {
+    --width1: 50%;
+}
+
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    font-family: "Pretendard";
+    margin: 0 auto;
+}
+
+
+.quick_menu_container {
+    position: fixed;
+    width: 145px;
+    height: 462px;
+    top: 18.721478996840750419283123366746%;
+    left: calc(var(--width1) - 387px);
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick_mystore {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 55px;
+}
+
+.quick_editstore {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 55px;
+}
+
+.quick_count {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 52px;
+}
+
+.quick_help {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 58px;
+}
+
+
+.quick_img_mystore_container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_mystore {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_editstore_container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_editstore {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_count_container {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_count {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_help_container {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_help {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_mystore_text {
+    font-family: Pretendard;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_editstore_text {
+    font-family: Pretendard;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_count_text {
+    font-family: Pretendard;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_help_text {
+    font-family: Pretendard;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_line {
+    width: 93px;
+    border-color: #D9D9D9;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.wall {
+    width: 100%;
+    height: 84px;
+    flex-shrink: 0;
+    background: #FF2424;
+    position: relative; /* 추가 */
+    z-index: 1;
+}
+
+.backbox{
+    background: #FF2424;
+    width: 430px;
+    height: 84px;
+    position: absolute;
+    top: 0; /* 추가 */
+    left: 50%; /* 추가 */
+    transform: translateX(-50%); /* 추가 */
+    z-index: 2; /* 추가 */
+}
+
+.my {
+    position: absolute;
+    top: 31px;
+    left: 46px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+.back {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 23px;
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+}
+
+.window {
+    min-width: 430px;
+    min-height: 1150px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.mainImg{
+    width: 384px;
+    height: 238.58px;
+    margin-top: 139px;
+    margin-left: 0px;
+    position: absolute;
+    border-radius: 10px;
+    background: #00A863;
+}
+
+.gradient{
+    background-image: linear-gradient(to bottom,  rgba(20, 20, 20, 0) 10%,
+    rgba(20, 20, 20, 0.25) 25%,
+    rgba(20, 20, 20, 0.5) 50%,
+    rgba(20, 20, 20, 0.75) 75%,
+    rgba(20, 20, 20, 1) 100%);
+    width: 384px;
+    height: 238.58px;
+    margin-top: 139px;
+    margin-left:0px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/* .container {
+    position: relative;
+    display: inline-block; 
+} */
+
+.first-img {
+    margin-top: 10px;
+    margin-left: 23px;
+    width: 374px;
+    height: 230px;
+    border-radius: 10px;
+    background: #00A863;
+    display: block;
+    filter: brightness(0.4);
+}
+
+h2 {
+    position: absolute;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 23.228px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.161px;
+    margin-top: 144px;
+    margin-left: 18px;
+}
+
+h4 {
+    position: absolute;
+    color: #FFF;
+    font-family: Pretendard;
+    font-size: 8.198px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.738px;
+    margin-top: 173.33px;
+    margin-left: 19.37px;
+}
+
+.star{
+    margin-top: 210px;
+    margin-left: 349px;
+    position: absolute;
+    width: 14.514px;
+    height: 14.514px;
+}
+
+.star1{
+    margin-top: 210px;
+    margin-left: 349px;
+    position: absolute;
+    width: 14.514px;
+    height: 14.514px;
+}
+
+
+.photo{
+    color: #191919;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    margin-top: 410px;
+    margin-left: -306px;
+}
+
+.rectangle{
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    position: absolute;
+    margin-top: 452px;
+    margin-left: -279px;
+}
+
+.rectangle2{
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    position: absolute;
+    margin-top: 452px;
+    margin-left: 0px;
+}
+
+.rectangle3{
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    position: absolute;
+    margin-top: 452px;
+    margin-left: 279px;
+}
+
+.fishPhoto{
+    width: 120px;
+    height: 120px;
+}
+
+.hLine{
+    width: 384px;
+    height: 1px;
+    opacity: 0.5;
+    background: #D9D9D9;
+    position: absolute;
+    margin-top: 594px;
+    margin-left: -1.5px;
+}
+
+.review{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    margin-top: 619px;
+    margin-left: -307px;
+}
+
+.reviewCount{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.605px;
+    position: absolute;
+    margin-top: 638px;
+    margin-left: -219px;
+}
+
+.bigRectangle{
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.09);
+    width: 384px;
+    height: 287px;
+    flex-shrink: 0;
+    position: absolute;
+    margin-top: 668px;
+    margin-left: 3px;
+}
+
+.rect1{
+    width: 341px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 21px;
+}
+
+.rect2{
+    width: 341px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    position: absolute;
+    margin-top: 71px;
+    margin-left: 21px;
+}
+
+.rect3{
+    width: 341px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    position: absolute;
+    margin-top: 116px;
+    margin-left: 21px;
+}
+
+.rect4{
+    width: 341px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    position: absolute;
+    margin-top: 161px;
+    margin-left: 21px;
+}
+
+.rect5{
+    width: 341px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    position: absolute;
+    margin-top: 206px;
+    margin-left: 21px;
+}
+
+.review5{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 13px;
+}
+
+.userName{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 291px;
+    text-align: center;
+}
+
+.userName2{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 278px;
+    text-align: center;
+}
+
+.userName3{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 278px;
+    text-align: center;
+}
+.userName4{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 212px;
+    text-align: center;
+}
+.userName5{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 264px;
+    text-align: center;
+}
+
+.nim{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.11px;
+    margin-top: 4.5px;
+    margin-left: 320px;
+}
+
+.plus{
+    color: #191919;
+    font-family: "Pretendard";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    margin-top: 251px;
+    margin-left: 179px;
+}
+
+.homePlus{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    margin-top: 264px;
+    margin-left: 191px;
+}
+
+.lastRect{
+    width: 384px;
+    height: 35px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FF2424;    
+    margin: 989px 23px 56px 23px;
+    position: absolute;
+}
+
+.lastText{
+    color: #FFF;
+    font-family: "Pretendard";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 166.836%; /* 18.352px */
+    letter-spacing: -0.55px;
+    margin-top: 9px;
+    margin-left: 173px;
+}
+
+@media screen and (max-width: 700px) {
+    .quick_menu_container {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        top: calc(100% - 100px);
+        left:0px;
+        background-color: #F1F1F1;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .quick_mystore {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 55px;
+        margin:auto;
+    }
+    
+    .quick_editstore {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 55px;
+        margin:auto;
+    }
+    
+    .quick_count {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 52px;
+        margin:auto;
+        padding-bottom: 17px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .quick_help {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 58px;
+        margin:auto;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    
+    
+    .quick_img_mystore_container {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_mystore {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_editstore_container {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_editstore {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_count_container {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_count {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_help_container {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_help {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_mystore_text {
+        font-family: Pretendard;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_editstore_text {
+        font-family: Pretendard;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_count_text {
+        font-family: Pretendard;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_help_text {
+        font-family: Pretendard;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_line {
+        width: 0px;
+        height: 100%;
+        border-color: #D9D9D9;
+        border-width: 0px;
+        border-style: solid;
+    }
+
+    .quickmenu_place{
+        width: 100%;
+        height: 100px;
+    }
+}

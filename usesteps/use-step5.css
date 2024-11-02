@@ -1,0 +1,129 @@
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+}
+
+.wall {
+    width: 100%;
+    height: 84px;
+    flex-shrink: 0;
+    background: #A100FF;
+    position: relative; /* 추가 */
+    z-index: 1;
+}
+
+.side {
+    margin-top: 192px;
+    margin-right: 600px;
+    width: 145px;
+    height: 368px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #F6F6F6;
+    position: absolute;   /*이부분 수정하면 따라 내려옴*/
+    cursor: pointer;
+}
+
+.sideline {
+    margin-top: 30px;
+    width: 93px;
+    border: thin solid;
+    color: #D9D9D9;
+}
+
+.select {
+    margin-top: 35px;
+    margin-left: 58px;
+    width: 30px;
+    height: 30px;
+}
+
+.text {
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+.window {
+    min-height: 130vh;
+    width: 430px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+}
+
+.backbox{
+    background: #A100FF;
+    width: 430px;
+    height: 84px;
+    position: absolute;
+    top: 0; /* 추가 */
+    left: 50%; /* 추가 */
+    transform: translateX(-50%); /* 추가 */
+    z-index: 2; /* 추가 */
+  }
+
+.bangbub {
+    position: absolute;
+    top: 31px;
+    left: 46px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+.back {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 23px;
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.step5 {
+    margin-top: 397px;
+    margin-left: 23px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.75px;
+    position: absolute;
+}
+
+.guide {
+    margin-top: 445px;
+    margin-left: 23px;
+    width: 400px;
+    color: #A100FF;
+    font-family: "Pretendard";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.836%; /* 24.134px */
+    letter-spacing: -1.36px;
+    position: absolute;
+}
+
+.button1 {
+    margin-top: 632px;
+    margin-left: 23px;
+    width: 384px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #A100FF;
+    cursor: pointer;
+}

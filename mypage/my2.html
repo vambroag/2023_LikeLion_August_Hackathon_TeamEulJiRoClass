@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="my2.css" type="text/css">
+  <link href="images/logo.png" rel="shortcut icon" type="image/x-icon" width="16px" height="16px">
+  <title>준비, 시장!</title>
+</head>
+
+<body>
+  <div class="wall"></div>
+
+  <div class="window">
+    <div class="backbox">
+      <div class="back" onclick="location.replace('../mypage/my1.html');">&lt;</div>
+      <div class="my">
+        마이페이지
+      </div>
+    </div>
+
+    <img src="../images/image 2.png" class="pic">
+
+    <div class="title">
+      <p>쭈꾸미 먹고 가유</p>
+      <p class="where">대천항 수산시장</p>
+    </div>
+
+    <h2 class="sooik" style="cursor: default;">수익</h2>
+
+    <div class="info1">
+      <table>
+        <tr>
+          <td style="cursor: default;">6.18</td>
+          <td style="cursor: default;">6.19</td>
+          <td style="cursor: default;">6.20</td>
+        </tr>
+        <tr class="line1">
+          <td style="cursor: default;">12</td>
+          <td style="cursor: default;">23</td>
+          <td style="cursor: default;">19</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2 class="review" style="cursor: default;">리뷰</h2>
+
+    <div class="bigRectangle">
+      <div class="rect1">
+        <p class="review5" style="cursor: default;">가게도 깨끗하고 맛있어요!</p>
+        <p class="userName" style="cursor: default;">주짱</p>
+        <p class="nim" style="cursor: default;">님</p>
+      </div>
+      <div class="rect2">
+        <p class="review5" style="cursor: default;">나쁘지 않네요.</p>
+        <p class="userName2" style="cursor: default;">범택연</p>
+        <p class="nim" style="cursor: default;">님</p>
+      </div>
+      <div class="rect3">
+        <p class="review5" style="cursor: default;">사장님이 친절하세요.</p>
+        <p class="userName3" style="cursor: default;">달기태</p>
+        <p class="nim" style="cursor: default;">님</p>
+      </div>
+      <div class="rect4">
+        <p class="review5" style="cursor: default;">너무 맛있어요!!</p>
+        <p class="userName4" style="cursor: default;">유나 아니고 윤하</p>
+        <p class="nim" style="cursor: default;">님</p>
+      </div>
+      <div class="rect5">
+        <p class="review5" style="cursor: default;">자주 가는 맛집 입니다.</p>
+        <p class="userName5" style="cursor: default;">수박공주</p>
+        <p class="nim" style="cursor: default;">님</p>
+      </div>
+
+      <p class="plus" style="cursor: pointer;">더보기</p>
+      <img src="../images/Vector 4.png" class="homePlus">
+    </div>
+
+    <h2 class="gwanggo" style="cursor: default;">광고 노출 횟수</h2>
+
+    <div class="info2">
+      <table>
+        <tr>
+          <td style="cursor: default;">6.18</td>
+          <td style="cursor: default;">6.19</td>
+          <td style="cursor: default;">6.20</td>
+        </tr>
+        <tr class="line1">
+          <td style="cursor: default;">12</td>
+          <td style="cursor: default;">23</td>
+          <td style="cursor: default;">19</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+  <div class="quick_menu_container">
+    <div class="quick_mystore">
+      <div class="quick_img_mystore_container">
+        <img src="../images/store.png" class="quick_img_mystore" style="cursor: pointer;" onclick="location.replace('../mypage/my2.html');" />
+      </div>
+      <p class="quick_img_mystore_text" style="cursor: pointer;">나의 가게 현황</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_editstore">
+      <div class="quick_img_editstore_container">
+        <img src="../images/draw.png" class="quick_img_editstore" style="cursor: pointer;" onclick="location.replace('../myadedit/cash-1.html');" />
+      </div>
+      <p class="quick_img_editstore_text" style="cursor: pointer;">가게 정보 수정</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_count">
+      <div class="quick_img_count_container">
+        <img src="../images/eye.png" class="quick_img_count" style="cursor: pointer;" onclick="location.replace('../mypage/my1.html');"/>
+      </div>
+      <p class="quick_img_count_text" style="cursor: pointer;">노출 수</p>
+    </div>
+    <div class="quick_line"></div>
+    <div class="quick_help">
+      <div class="quick_img_help_container">
+        <img src="../images/help-web-button (1).png" class="quick_img_help" style="cursor: pointer;" onclick="location.replace('../usesteps/use-step1.html');"/>
+      </div>
+      <p class="quick_img_help_text" style="cursor: pointer;">사용 방법</p>
+    </div>
+  </div>
+  </body>
+  <script>
+    document.getElementById("quick_img_editstore_container").addEventListener("click", () => {
+      location.replace('../myadedit/cash-1.html');
+    });
+    document.getElementById("quick_img_count_container").addEventListener("click", () => {
+      location.replace('../mypage/my1.html');
+    });
+    document.getElementById("quick_img_help_container").addEventListener("click", () => {
+      location.replace('../usesteps/use-step1.html');
+    });
+  </script>
+
+
+</html>

@@ -1,0 +1,647 @@
+:root{
+    --width1:50%;
+}
+
+body {
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 100%;
+    position: relative;
+    font-family: "Pretendard";
+    margin: 0;
+}
+
+.wall {
+    width: 100%;
+    height: 84px;
+    flex-shrink: 0;
+    background: #00A863;
+    position: relative; /* 추가 */
+    z-index: 1;
+}
+/* 퀵 메뉴*/
+
+.quick_menu_container {
+    position: fixed;
+    width: 145px;
+    height: 462px;
+    top: 18.721478996840750419283123366746%;
+    left: calc(var(--width1) - 387px);
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick_mystore {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 55px;
+}
+
+.quick_editstore {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 55px;
+}
+
+.quick_count {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 52px;
+}
+
+.quick_help {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+    height: 58px;
+}
+
+
+.quick_img_mystore_container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_mystore {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_editstore_container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_editstore {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_count_container {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_count {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_help_container {
+    width: 33px;
+    height: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.quick_img_help {
+    max-width: 100%;
+    height: auto;
+}
+
+.quick_img_mystore_text {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_editstore_text {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_count_text {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_img_help_text {
+    font-family: "Pretendard";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-top: auto;
+}
+
+.quick_line {
+    width: 93px;
+    border-color: #D9D9D9;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+
+
+.bar {
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.bar-content {
+    margin-top: 10px;
+    color: #000;
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.42px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.window {
+    min-height: 120vh;
+    width: 420px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding-bottom: 10vh;
+}
+
+.backbox{
+    background: #00A863;
+    width: 430px;
+    height: 84px;
+    position: absolute;
+    top: 0; /* 추가 */
+    left: 50%; /* 추가 */
+    transform: translateX(-50%); /* 추가 */
+    z-index: 2; /* 추가 */
+}
+
+.my {
+    position: absolute;
+    top: 31px;
+    left: 46px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+.back {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 23px;
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+
+
+/* 기본 세팅 */ 
+
+
+.tl {
+    margin-top: 123px;
+    padding-bottom: 188px;
+    position: absolute;
+}
+
+.example {
+    margin-top: 37px ;
+    margin-left: 36px;
+    width: 59px;
+    height: 26px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #00A863;
+}
+
+span {
+    margin-top: 7px;
+    margin-left: 11.5px;
+    color: #FFF;
+    font-family: "Pretendard";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.65px;
+}
+
+.container {
+    position: relative;
+    display: inline-block; /* Optional, adjust as needed */
+}
+
+.first-img {
+    margin-top: 10px;
+    margin-left: 23px;
+    width: 374px;
+    height: 230px;
+    border-radius: 10px;
+    background: #00A863;
+    display: block;
+    filter: brightness(0.4);
+}
+
+h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 130px;
+    padding-left: 41px;
+    color: #FFF;
+    font-family: "Pretendard";
+    font-size: 23.228px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.161px;
+}
+
+h4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 170px;
+    padding-left: 45px;
+    color: #FFF;
+    font-family: "Pretendard";
+    font-size: 8.198px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.738px;
+    }
+
+.sakak {
+    margin-top: 10px;
+    margin-left: 23px;
+    width: 374px;
+    height: 171px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: 1px solid #00A863;
+}
+
+.boximg {
+    width: 137px;
+    height: 171px;
+    margin-left: -0.5px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.nemo {
+    margin-top: 16px;
+    margin-right: 170px;
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #00A863;
+    float: right;
+}
+
+.icon-img {
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 33px;
+    height: 33px;
+    flex-shrink: 0;
+}
+
+.star-img {
+    margin-left: 192px;
+    margin-top: 19px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.title {
+    margin-top: 15px;
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.8px;
+    position:absolute;
+}
+
+.number {
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.35px;
+}
+
+.sun-1 {
+    margin-top: 40px;
+    width: 214px;
+    height: 0.5px;
+    background: #00A863;
+    border: solid 0px
+}
+
+.sulmyeong {
+    margin-top: -3px;
+    width: 214px;
+    height: 45px;
+    color: #00A863;
+    font-family: "Pretendard";
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.45px;
+}
+
+.sun-2 {
+    margin-top: 69px;
+    margin-left: 23px;
+    width: 374px;
+    height: 1px;
+    opacity: 0.5;
+    background: #00A863;
+}
+
+.ppp {
+    margin-top: 18px;
+    color: #00A863;
+    text-align: center;
+    font-family: "Pretendard";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 166.836%; /* 20.02px */
+    letter-spacing: -0.96px;
+    opacity: 0.5;
+}
+
+.button1 {
+    margin-top: 20px;
+    margin-left: 23px;
+    width: 384px;
+    height: 51px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    border: solid 0px #00A863;
+    background: #00A863;
+    cursor: pointer;
+    position: absolute;
+}
+
+@media screen and (max-height: 1080px) {
+    body {
+        height: 1080px;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+    body {
+        height: 1204px;
+    }
+
+    .background {
+        width: 100%;
+    }
+
+    .main_content {
+        width: 100%;
+    }
+
+    .main_window {
+        width: 100%;
+        height: 1080px;
+    }
+
+
+    .quick_menu_container {
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        top: calc(100% - 100px);
+        left:0px;
+        background-color: #F1F1F1;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .quick_mystore {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 55px;
+        margin:auto;
+    }
+    
+    .quick_editstore {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 55px;
+        margin:auto;
+    }
+    
+    .quick_count {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 52px;
+        margin:auto;
+        padding-bottom: 17px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .quick_help {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        height: 58px;
+        margin:auto;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    
+    
+    .quick_img_mystore_container {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_mystore {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_editstore_container {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_editstore {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_count_container {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_count {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_help_container {
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 7px;
+    }
+    
+    .quick_img_help {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .quick_img_mystore_text {
+        font-family: "Pretendard";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_editstore_text {
+        font-family: "Pretendard";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_count_text {
+        font-family: "Pretendard";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_img_help_text {
+        font-family: "Pretendard";
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin-top: auto;
+    }
+    
+    .quick_line {
+        width: 0px;
+        height: 100%;
+        border-color: #D9D9D9;
+        border-width: 0px;
+        border-style: solid;
+    }
+
+    .quickmenu_place{
+        width: 100%;
+        height: 100px;
+    }
+}

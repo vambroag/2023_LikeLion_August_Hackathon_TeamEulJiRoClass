@@ -9,7 +9,7 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: new google.maps.LatLng(37.559196356896, 126.97736606652),
     zoom: 17,
-    mapId: '31889289191ab1d3',
+    mapId: 'PLACE MAP ID HERE',
     disableDefaultUI: true,
   });
 
